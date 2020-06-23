@@ -14,6 +14,8 @@ public class Transactions {
 
         // TODO 2 : call singleton and get total
         int total = 0;
+        Singleton singleton = Singleton.getInstance();
+        total = singleton.getBank().getTotal();
         System.out.printf("Your balance is:%d%n", total);
     }
 }
